@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Check } from "@phosphor-icons/react/dist/ssr";
-import { Nav } from "@/components/Nav";
-import { Footer } from "@/components/Footer";
 import { Container, Eyebrow } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { ButtonLink } from "@/components/ui/Button";
@@ -25,9 +23,7 @@ export default function ClassesPage() {
   const { intro, offerings, schedule } = classesPage;
 
   return (
-    <>
-      <Nav />
-      <main>
+    <main>
         {/* Intro */}
         <section className="border-b border-border pb-20 pt-32 lg:pb-24">
           <Container>
@@ -44,14 +40,14 @@ export default function ClassesPage() {
                 </Reveal>
               </div>
               <Reveal index={1}>
-                <div className="relative aspect-[7/5] w-full overflow-hidden rounded-card bg-surface">
+                <div className="relative aspect-4/5 w-full max-w-sm overflow-hidden rounded-card bg-surface md:ml-auto">
                   <Image
                     src={images.classroom}
-                    alt="A class in session"
+                    alt="Bhavesh at an Access Consciousness class"
                     fill
                     priority
-                    sizes="(max-width: 1024px) 100vw, 42vw"
-                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 24rem"
+                    className="object-cover object-top img-editorial"
                   />
                 </div>
               </Reveal>
@@ -157,7 +153,7 @@ export default function ClassesPage() {
 
             <Reveal>
               <div className="mt-12 flex flex-col gap-3 sm:flex-row">
-                <ButtonLink href="/#booking">{ctas.primary}</ButtonLink>
+                <ButtonLink href="/book">{ctas.primary}</ButtonLink>
                 <ButtonLink href={site.whatsapp.link} variant="secondary">
                   {ctas.whatsapp}
                 </ButtonLink>
@@ -165,8 +161,6 @@ export default function ClassesPage() {
             </Reveal>
           </Container>
         </section>
-      </main>
-      <Footer />
-    </>
+    </main>
   );
 }

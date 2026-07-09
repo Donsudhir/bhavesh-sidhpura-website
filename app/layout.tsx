@@ -2,6 +2,10 @@ import type { Metadata, Viewport } from "next";
 import { Newsreader, Inter } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/site";
+import { Nav } from "@/components/Nav";
+import { Footer } from "@/components/Footer";
+import { EmberCursor } from "@/components/ui/EmberCursor";
+import { Grain } from "@/components/ui/Grain";
 
 const newsreader = Newsreader({
   variable: "--font-newsreader",
@@ -74,7 +78,11 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="min-h-full flex flex-col bg-bg text-text">
+        <Grain />
+        <EmberCursor />
+        <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

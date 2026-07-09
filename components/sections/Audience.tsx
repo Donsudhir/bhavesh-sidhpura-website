@@ -12,10 +12,10 @@ export function Audience() {
           </h2>
         </Reveal>
 
-        <div className="mt-16 grid gap-px overflow-hidden rounded-card border border-border bg-border md:grid-cols-3">
+        <div className="mt-16 grid gap-5 md:grid-cols-3">
           {audience.columns.map((c, i) => (
             <Reveal as="div" index={i} key={c.title}>
-              <div className="flex h-full flex-col bg-bg p-8 lg:p-10">
+              <div className="spotlight flex h-full flex-col rounded-2xl border border-border bg-bg-elevated p-8 transition-shadow duration-300 hover:shadow-soft lg:p-10">
                 <span className="font-display text-2xl font-light text-accent">
                   {String(i + 1).padStart(2, "0")}
                 </span>

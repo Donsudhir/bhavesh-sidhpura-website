@@ -8,13 +8,13 @@ import { booking, site, images } from "@/lib/site";
 
 export function Booking() {
   return (
-    <section id="booking" className="scroll-mt-24 border-t border-border bg-surface py-24 lg:py-32">
+    <section id="booking" className="scroll-mt-24 bg-surface py-20 lg:py-24">
       <Container>
         <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <div>
             <Reveal>
-              <h2 className="font-display text-4xl font-light leading-[1.1] tracking-[-0.02em] text-text sm:text-5xl">
-                {booking.heading}
+              <h2 className="font-display text-3xl font-light leading-[1.1] tracking-[-0.02em] text-text sm:text-4xl">
+                A 1:1 session, or just a hello.
               </h2>
               <p className="mt-5 max-w-md text-lg leading-relaxed text-text-muted">
                 {booking.body}
@@ -22,13 +22,13 @@ export function Booking() {
             </Reveal>
 
             <Reveal index={1}>
-              <div className="relative mt-9 aspect-[5/4] w-full max-w-sm overflow-hidden rounded-card bg-bg">
+              <div className="relative mt-9 aspect-4/5 w-full max-w-sm overflow-hidden rounded-card bg-bg">
                 <Image
                   src={images.warm}
                   alt="Bhavesh Sidhpura"
                   fill
                   sizes="(max-width: 1024px) 90vw, 32vw"
-                  className="object-cover"
+                  className="object-cover object-top img-editorial"
                 />
               </div>
             </Reveal>

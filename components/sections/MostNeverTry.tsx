@@ -43,7 +43,7 @@ export function MostNeverTry() {
           <Reveal index={2}>
             <div className="mt-12">
               <ButtonLink
-                href="/#circle"
+                href="/about"
                 className="bg-[#f3efe6] text-[#14120e] hover:opacity-90"
               >
                 {mostNeverTry.cta}

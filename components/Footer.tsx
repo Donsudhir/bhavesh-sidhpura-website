@@ -45,7 +45,7 @@ export function Footer() {
                 </li>
               ))}
               <li>
-                <Link href="/#booking" className="hover:text-text">
+                <Link href="/book" className="hover:text-text">
                   Book
                 </Link>
               </li>

@@ -155,7 +155,7 @@ export function Diagnostic() {
                 </div>
 
                 <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                  <ButtonLink href="/#booking">
+                  <ButtonLink href="/book">
                     {diagnostic.resultCta}
                   </ButtonLink>
                   <button

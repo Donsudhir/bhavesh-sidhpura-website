@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useScroll, useMotionValueEvent } from "motion/react";
 import { List, X } from "@phosphor-icons/react";
 import { nav, site, ctas } from "@/lib/site";
@@ -11,6 +12,7 @@ import { ButtonLink } from "./ui/Button";
 export function Nav() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (y) => {
@@ -30,7 +32,7 @@ export function Nav() {
       className={`sticky top-0 z-50 border-b transition-colors duration-300 ${
         scrolled
           ? "border-border bg-bg/85 backdrop-blur-md"
-          : "border-transparent bg-bg/0"
+          : "border-transparent bg-transparent"
       }`}
     >
       <nav className="mx-auto flex h-[72px] max-w-[1200px] items-center justify-between px-6 sm:px-8">
@@ -44,20 +46,24 @@ export function Nav() {
 
         <div className="hidden items-center gap-8 lg:flex">
           <ul className="flex items-center gap-7 text-[0.95rem] text-text-muted">
-            {nav.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="transition-colors hover:text-text"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
+            {nav.map((item) => {
+              const active = pathname === item.href;
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    aria-current={active ? "page" : undefined}
+                    className={`transition-colors ${active ? "text-text" : "hover:text-text"}`}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
           <div className="flex items-center gap-3">
             <ThemeToggle />
-            <ButtonLink href="/#booking" className="px-5 py-2.5 text-sm">
+            <ButtonLink href="/book" className="px-5 py-2.5 text-sm">
               {ctas.primary}
             </ButtonLink>
           </div>
@@ -94,7 +100,7 @@ export function Nav() {
               ))}
             </ul>
             <ButtonLink
-              href="/#booking"
+              href="/book"
               className="mt-6 w-full"
               onClick={() => setOpen(false)}
             >

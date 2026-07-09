@@ -30,7 +30,7 @@ export function Transformations() {
         <div className="mt-14 grid gap-5 lg:grid-cols-3">
           {transformations.explorers.map((ex, i) => (
             <Reveal as="article" index={i} key={ex.id}>
-              <article className="flex h-full flex-col rounded-card border border-border bg-bg-elevated p-7 lg:p-8">
+              <article className="spotlight flex h-full flex-col rounded-card border border-border bg-bg-elevated p-7 transition-shadow duration-300 hover:shadow-soft lg:p-8">
                 <header className="flex items-baseline justify-between">
                   <h3 className="font-display text-lg font-normal text-text">
                     {ex.label}

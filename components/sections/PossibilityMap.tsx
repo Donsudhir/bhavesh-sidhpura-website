@@ -165,7 +165,7 @@ export function PossibilityMap() {
                   {possibilityMap.endNote}
                 </p>
                 <div className="mt-6">
-                  <ButtonLink href="/#booking" className="gap-2">
+                  <ButtonLink href="/book" className="gap-2">
                     {possibilityMap.endCta}
                     <ArrowRight size={16} />
                   </ButtonLink>

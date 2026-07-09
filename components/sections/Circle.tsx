@@ -37,14 +37,14 @@ export function Circle() {
             <ul className="space-y-px overflow-hidden rounded-card border border-border bg-border">
               {circle.values.map((v, i) => (
                 <Reveal as="li" index={i} key={i}>
-                  <li className="flex items-start gap-4 bg-bg p-7">
+                  <div className="flex items-start gap-4 bg-bg p-7">
                     <span className="mt-1 font-display text-base font-light text-accent">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <p className="text-[1.08rem] leading-relaxed text-text">
                       {v}
                     </p>
-                  </li>
+                  </div>
                 </Reveal>
               ))}
             </ul>
@@ -55,9 +55,11 @@ export function Circle() {
                   {circle.invitation}
                 </p>
                 <div className="mt-6">
-                  <ButtonLink href="/#booking" className="gap-2">
+                  <ButtonLink
+                    href="/book"
+                    icon={<ArrowRight size={16} weight="bold" />}
+                  >
                     {circle.cta}
-                    <ArrowRight size={16} />
                   </ButtonLink>
                 </div>
               </div>

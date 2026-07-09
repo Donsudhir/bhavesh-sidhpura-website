@@ -43,10 +43,9 @@ export const ctas = {
 } as const;
 
 export const nav = [
-  { label: "Diagnostic", href: "/#diagnostic" },
-  { label: "The Map", href: "/#map" },
-  { label: "Stories", href: "/#transformations" },
-  { label: "The Circle", href: "/#circle" },
+  { label: "About", href: "/about" },
+  { label: "Sessions", href: "/sessions" },
+  { label: "Experience", href: "/experience" },
   { label: "Classes", href: "/classes" },
 ] as const;
 
@@ -62,6 +61,105 @@ export const hero = {
   primaryCta: "Discover what's possible",
   secondaryCta: "Book a session",
   whisper: "How does it get any better than this?",
+};
+
+/* HERO TRUST TICKER — quiet marquee of the things that make him credible. */
+export const heroTrust = [
+  "Certified Access Bars Facilitator",
+  "Access Body Process Facilitator",
+  "Access Energetic Facelift",
+  "Listed on the global Access Consciousness directory",
+  "Sessions & certified classes in Pune",
+  "A businessman first, a facilitator second",
+];
+
+/* MEET BHAVESH — the home-page introduction. Who he is, what he is qualified
+   in, and the short shape of his journey, so a first-time visitor can place
+   him and relate before anything is sold. Honest drafts; safe to edit. */
+export const meetBhavesh = {
+  kicker: "Meet Bhavesh",
+  heading: "A businessman first.",
+  emphasis: "A facilitator second.",
+  lead:
+    "I am Bhavesh Sidhpura. I still run a business here in Pune. I am also a certified Access Consciousness facilitator — and the two are not a contradiction. One is the reason I am any good at the other.",
+  pull: "I never left business. I changed how I run it.",
+  body: [
+    "I did not arrive through spirituality. I arrived through stress, numbers, and a year I would not wish on anyone. The tools I now facilitate are the ones that pulled my own work, health, and relationships back from the edge.",
+    "I facilitate the way I would have wanted it offered to me back then: grounded, practical, no performance, no jargon, and no asking you to believe anything you have not felt for yourself.",
+  ],
+  qualifications: {
+    label: "Qualifications",
+    items: [
+      {
+        name: "Access Bars Facilitator",
+        note: "Certified to run and to teach the Bars.",
+      },
+      {
+        name: "Access Body Process Facilitator",
+        note: "Trained in the hands-on body processes.",
+      },
+      {
+        name: "Access Energetic Facelift",
+        note: "Certified practitioner and teacher.",
+      },
+      {
+        name: "Global directory listed",
+        note: "On the official Access Consciousness facilitator directory.",
+      },
+    ],
+  },
+  journey: {
+    label: "The short version",
+    items: [
+      {
+        marker: "The wall",
+        note: "Did everything a businessman is supposed to do. Still hit a wall I could not work my way out of.",
+      },
+      {
+        marker: "The turn",
+        note: "Found Access almost by accident. Tried it to disprove it. Felt something shift I could not explain.",
+      },
+      {
+        marker: "The practice",
+        note: "Trained and certified, then began facilitating others while still running my own business.",
+      },
+      {
+        marker: "Now",
+        note: "Sessions and certified classes across Pune and India, for the people I used to be.",
+      },
+    ],
+  },
+  facts: [
+    { k: "Based in", v: "Pune, India" },
+    { k: "Works with", v: "Owners, founders, professionals" },
+    { k: "Languages", v: "English, Hindi, Gujarati" },
+  ],
+  cta: "Read the full story",
+  ctaHref: "/about",
+};
+
+/* EXPERIENCE TEASER — points the curious toward the interactive tools that
+   live on their own page, so the home page stays a calm info page. */
+export const experienceTeaser = {
+  kicker: "Before you book",
+  heading: "Feel the work before you pay for any of it.",
+  body: "Three quiet ways in, all free, all on their own page. Name a pattern you have never seen named. Follow one question down to where it begins. Then step into the room most visitors never open.",
+  items: [
+    {
+      title: "Reality diagnostic",
+      note: "Five questions. One pattern you have never seen named out loud.",
+    },
+    {
+      title: "The Possibility Map",
+      note: "Pick a door. See how deep the thing under it actually goes.",
+    },
+    {
+      title: "The Observatory",
+      note: "A quiet room, and the questions we keep off the public page.",
+    },
+  ],
+  cta: "Enter the experience",
+  ctaHref: "/experience",
 };
 
 export const story = {
@@ -80,6 +178,110 @@ export const story = {
     "I never left business. I still run one today. What changed is how I run it, and who I became while doing it.",
     "Today I help other business owners and professionals find what I found. Not as a replacement for hard work, but as the missing piece underneath it.",
   ],
+};
+
+/* ---------------------------------------------------------------------------
+   ABOUT PAGE  ·  the man behind the work.
+   Most copy here is PLACEHOLDER until Bhavesh sends his real bio + photos.
+   Each field is structured so it can be swapped one-to-one without touching markup.
+--------------------------------------------------------------------------- */
+export const about = {
+  kicker: "About",
+  // PLACEHOLDER: one-line positioning. Replace with Bhavesh's own words.
+  heading: "A businessman who found another way.",
+  lead:
+    "I am Bhavesh Sidhpura. I still run a business. I am also an Access Consciousness facilitator. The two are not a contradiction — one is the reason I am any good at the other.",
+  // PLACEHOLDER bio paragraphs — to be replaced with the real bio Bhavesh provides.
+  bio: [
+    "I did not arrive here through spirituality. I arrived through stress, numbers, and a year I would not wish on anyone. The tools I teach are the ones that pulled my own work, my health, and my relationships back from the edge.",
+    "I have spent my life in business in Pune. The discipline of that world is in everything I do — practical, grounded, allergic to fluff. I facilitate the way I would have wanted it offered to me: no performance, no jargon, no asking you to believe anything.",
+  ],
+  // Short, emotional pull that anchors the bio.
+  pullQuote: "I never left business. I changed how I run it, and who I became while doing it.",
+  // Facts the client confirms. PLACEHOLDER values; safe to edit freely.
+  facts: [
+    { k: "Based in", v: "Pune, India" },
+    { k: "Practising since", v: "Year to confirm" },
+    { k: "Works with", v: "Owners, founders, professionals" },
+    { k: "Languages", v: "English, Hindi, Gujarati" },
+  ],
+  // Dedicated qualifications block so credibility is unmistakable.
+  qualifications: {
+    label: "Qualifications",
+    heading: "Certified, and accountable to a global body.",
+    intro:
+      "Every one of these is a formal Access Consciousness certification, not a weekend badge. They mean I am trained to run each process on you, and to teach you to run it yourself.",
+    items: [
+      {
+        name: "Access Bars Facilitator",
+        note: "Certified to run the Bars and to teach the certified one-day class.",
+      },
+      {
+        name: "Access Body Process Facilitator",
+        note: "Trained in the hands-on body processes for specific patterns.",
+      },
+      {
+        name: "Access Energetic Facelift",
+        note: "Certified practitioner and teacher of the Facelift.",
+      },
+    ],
+    directory:
+      "Listed on the official Access Consciousness global facilitator directory — the same place you can verify any facilitator worldwide.",
+    directoryCta: "Verify on the directory",
+    // PLACEHOLDER: replace with Bhavesh's actual directory URL when confirmed.
+    directoryHref: "https://www.accessconsciousness.com/en/find-a-facilitator/",
+  },
+  beliefHeading: "What I actually believe",
+  beliefs: [
+    {
+      title: "The block is rarely the block.",
+      body: "The money, the team, the relationship — those are where it shows. They are almost never where it starts.",
+    },
+    {
+      title: "You do not need to become someone else.",
+      body: "Nothing here asks you to leave your life, your ambition, or your edge. It asks the opposite.",
+    },
+    {
+      title: "One question can move a year.",
+      body: "Not motivation, not hacks. A real question, sat with honestly, changes the direction quietly and for good.",
+    },
+  ],
+  // PLACEHOLDER timeline. Replace with real milestones once confirmed.
+  journey: {
+    label: "The journey here",
+    heading: "How a businessman ends up doing this.",
+    items: [
+      {
+        marker: "The wall",
+        note: "I did everything a businessman is supposed to do — worked harder, cut costs, took every consultant's advice. The business was still bleeding, and it was eating my sleep, my health, my time with my family.",
+      },
+      {
+        marker: "The doubt",
+        note: "I came across Access almost by accident. I tried it mostly to prove it would not work. I was a businessman, not a spiritual type.",
+      },
+      {
+        marker: "The turn",
+        note: "When I finally sat with it, something I still cannot fully put into words shifted. Not the market. Not the numbers, not yet. Something in me. The decisions I made after were different.",
+      },
+      {
+        marker: "The practice",
+        note: "I trained, then certified, then began facilitating others — while still running my own business, because I never wanted to teach from theory.",
+      },
+      {
+        marker: "Now",
+        note: "Sessions and certified classes across Pune and India, for the business owners and professionals I used to be.",
+      },
+    ],
+  },
+  ctaHeading: "Curious where you would start?",
+};
+
+/* BOOK PAGE intro — wraps the existing Booking section. */
+export const bookPage = {
+  kicker: "Begin",
+  heading: "Book your first session.",
+  lead:
+    "Pick a time below, or message first if you have a question. No long forms, no pressure, no obligation to continue.",
 };
 
 /* THE RECOGNITION — the "this is exactly me" moment.
@@ -240,7 +442,7 @@ export const services: Service[] = [
     length: "1 to 1.5 hours",
     price: "Starting from Rs 5,000",
     cta: "Book a session",
-    ctaHref: "/#booking",
+    ctaHref: "/book",
   },
   {
     id: "body",
@@ -249,7 +451,7 @@ export const services: Service[] = [
     length: "1.5 to 2 hours per process",
     price: "Starting from Rs 5,000",
     cta: "Enquire",
-    ctaHref: "/#booking",
+    ctaHref: "/book",
   },
   {
     id: "bars-class",
@@ -670,21 +872,23 @@ export const possibilityMap = {
 };
 
 /* ---------------------------------------------------------------------------
-   IMAGES  ·  swap these URLs for real shoot assets when ready.
-   Currently B&W editorial placeholders (Picsum, seeded + grayscale).
+   IMAGES  ·  Real photos live in /public/images (a–e.jpeg).
+   To replace a shot site-wide, drop a new file in that folder keeping the
+   same name, or point the key below at a different file.
 --------------------------------------------------------------------------- */
-const px = (seed: string, w: number, h: number) =>
-  `https://picsum.photos/seed/${seed}/${w}/${h}?grayscale`;
-
 export const images = {
-  // Hero: editorial B&W portrait, negative space for text overlay (Shoot Day Look 1)
-  heroPortrait: px("bhavesh-hero-portrait", 1100, 1400),
-  // Mid-action "delivering Bars" shot
-  delivering: px("bhavesh-bars-session", 1200, 900),
-  // Contemplative looking-away portrait
-  contemplative: px("bhavesh-contemplative", 1000, 1250),
-  // Warm, smiling portrait
-  warm: px("bhavesh-warm-portrait", 1000, 1000),
-  // Classes page hero
-  classroom: px("bhavesh-class-room", 1400, 900),
+  // Home hero — warm, facing camera, reads well inside a framed portrait
+  heroPortrait: "/images/d.jpeg",
+  // Home "Meet Bhavesh" — composed, seated, editorial
+  meetBhavesh: "/images/c.jpeg",
+  // Sessions featured card — at work on stage
+  delivering: "/images/e.jpeg",
+  // Story — relaxed, friendly (section currently unused)
+  contemplative: "/images/b.jpeg",
+  // Booking — relaxed, friendly portrait
+  warm: "/images/b.jpeg",
+  // Classes page hero — "Advanced Body Class" banner in frame, on-theme
+  classroom: "/images/e.jpeg",
+  // About page — the businessman, before the work
+  aboutPortrait: "/images/a.jpeg",
 };

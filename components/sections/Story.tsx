@@ -22,13 +22,13 @@ export function Story() {
               </h2>
             </Reveal>
             <Reveal index={1}>
-              <div className="relative mt-10 aspect-[4/5] w-full max-w-sm overflow-hidden rounded-card bg-surface">
+              <div className="relative mt-10 aspect-4/5 w-full max-w-sm overflow-hidden rounded-card bg-surface">
                 <Image
                   src={images.contemplative}
                   alt="Bhavesh Sidhpura, looking away"
                   fill
                   sizes="(max-width: 1024px) 90vw, 32vw"
-                  className="object-cover"
+                  className="object-cover object-top img-editorial"
                 />
               </div>
             </Reveal>

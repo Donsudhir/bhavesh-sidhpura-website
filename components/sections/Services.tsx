@@ -24,20 +24,20 @@ export function Services() {
           {services.map((s, i) => (
             <Reveal as="article" index={i % 2} key={s.id}>
               <div
-                className={`group flex h-full flex-col overflow-hidden rounded-card border transition-colors ${
+                className={`spotlight group flex h-full flex-col overflow-hidden rounded-card border transition-colors ${
                   s.featured
-                    ? "border-accent/40 bg-surface"
+                    ? "border-accent/40 bg-surface md:col-span-2 md:flex-row"
                     : "border-border bg-bg-elevated hover:border-border-strong"
                 }`}
               >
                 {s.featured && (
-                  <div className="relative h-44 w-full overflow-hidden">
+                  <div className="relative aspect-4/5 w-full overflow-hidden md:aspect-3/4 md:w-2/5 md:shrink-0">
                     <Image
                       src={images.delivering}
-                      alt="Bhavesh delivering an Access Bars session"
+                      alt="Bhavesh at an Access Consciousness class"
                       fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 40vw"
+                      className="object-cover object-top img-editorial"
                     />
                     <span className="absolute left-4 top-4 rounded-full bg-accent px-3 py-1 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-on-accent">
                       Most booked
@@ -45,7 +45,7 @@ export function Services() {
                   </div>
                 )}
 
-                <div className="flex flex-1 flex-col p-7 sm:p-8">
+                <div className="flex flex-1 flex-col p-7 sm:p-8 md:justify-center">
                   <h3 className="font-display text-2xl font-normal leading-snug text-text">
                     {s.name}
                   </h3>
