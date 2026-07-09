@@ -53,14 +53,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f8f7f4" },
-    { media: "(prefers-color-scheme: dark)", color: "#14120e" },
-  ],
+  themeColor: "#14120e",
 };
-
-// Prevent theme flash: set .dark before paint based on stored choice or system.
-const themeScript = `(function(){try{var t=localStorage.getItem('theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.classList.toggle('dark',d);}catch(e){}})();`;
 
 export default function RootLayout({
   children,
@@ -70,13 +64,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      suppressHydrationWarning
-      data-scroll-behavior="smooth"
-      className={`${newsreader.variable} ${inter.variable} h-full antialiased`}
+      className={`dark ${newsreader.variable} ${inter.variable} h-full antialiased`}
     >
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-      </head>
       <body className="min-h-full flex flex-col bg-bg text-text">
         <Grain />
         <EmberCursor />
