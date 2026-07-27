@@ -120,7 +120,7 @@ export default function ClassesPage() {
               </h2>
               <p className="mt-4 max-w-xl text-[0.95rem] leading-relaxed text-text-muted">
                 New dates are added regularly. If nothing below suits you,
-                message me and we will find a time.
+                send a message and a time can be found.
               </p>
             </Reveal>
 

@@ -70,7 +70,7 @@ export const heroTrust = [
   "Access Energetic Facelift",
   "Listed on the global Access Consciousness directory",
   "Sessions & certified classes in Pune",
-  "A businessman first, a facilitator second",
+  "A facilitator and a businessman",
 ];
 
 /* MEET BHAVESH — the home-page introduction. Who he is, what he is qualified
@@ -78,14 +78,14 @@ export const heroTrust = [
    him and relate before anything is sold. Honest drafts; safe to edit. */
 export const meetBhavesh = {
   kicker: "Meet Bhavesh",
-  heading: "A businessman first.",
-  emphasis: "A facilitator second.",
+  heading: "A facilitator.",
+  emphasis: "And a businessman.",
   lead:
-    "I am Bhavesh Sidhpura. I still run a business here in Pune. I am also a certified Access Consciousness facilitator — and the two are not a contradiction. One is the reason I am any good at the other.",
-  pull: "I never left business. I changed how I run it.",
+    "Bhavesh Sidhpura still runs a business here in Pune. He is also a certified Access Consciousness facilitator — and the two are not a contradiction. One is the reason he is any good at the other.",
+  pull: "He never left business. He changed how he runs it.",
   body: [
-    "I did not arrive through spirituality. I arrived through stress, numbers, and a year I would not wish on anyone. The tools I now facilitate are the ones that pulled my own work, health, and relationships back from the edge.",
-    "I facilitate the way I would have wanted it offered to me back then: grounded, practical, no performance, no jargon, and no asking you to believe anything you have not felt for yourself.",
+    "He did not arrive through spirituality. He arrived through stress, numbers, and a year he would not wish on anyone. The tools he now facilitates are the ones that pulled his own work, health, and relationships back from the edge.",
+    "He facilitates the way he would have wanted it offered to him back then: grounded, practical, no performance, no jargon, and no asking anyone to believe anything they have not felt for themselves. He has been practising since 2016.",
   ],
   qualifications: {
     label: "Qualifications",
@@ -113,26 +113,27 @@ export const meetBhavesh = {
     items: [
       {
         marker: "The wall",
-        note: "Did everything a businessman is supposed to do. Still hit a wall I could not work my way out of.",
+        note: "Did everything a businessman is supposed to do. Still hit a wall he could not work his way out of.",
       },
       {
         marker: "The turn",
-        note: "Found Access almost by accident. Tried it to disprove it. Felt something shift I could not explain.",
+        note: "Found Access almost by accident. Tried it to disprove it. Felt something shift he could not explain.",
       },
       {
         marker: "The practice",
-        note: "Trained and certified, then began facilitating others while still running my own business.",
+        note: "Trained and certified from 2016, then began facilitating others while still running his own business.",
       },
       {
         marker: "Now",
-        note: "Sessions and certified classes across Pune and India, for the people I used to be.",
+        note: "Sessions and certified classes across Pune and India, for the people he used to be.",
       },
     ],
   },
   facts: [
     { k: "Based in", v: "Pune, India" },
+    { k: "Practising since", v: "2016" },
     { k: "Works with", v: "Owners, founders, professionals" },
-    { k: "Languages", v: "English, Hindi, Gujarati" },
+    { k: "Languages", v: "English, Hindi, Gujarati, Marathi" },
   ],
   cta: "Read the full story",
   ctaHref: "/about",
@@ -155,7 +156,7 @@ export const experienceTeaser = {
     },
     {
       title: "The Observatory",
-      note: "A quiet room, and the questions we keep off the public page.",
+      note: "A quiet room, and the questions kept off the public page.",
     },
   ],
   cta: "Enter the experience",
@@ -163,20 +164,20 @@ export const experienceTeaser = {
 };
 
 export const story = {
-  label: "My story",
+  label: "His story",
   heading: "The turning point",
-  audioLabel: "Hear it in my voice, 40 sec",
+  audioLabel: "Hear it in his voice, 40 sec",
   // PLACEHOLDER: Bhavesh's own-voice recording. Drop the file in /public/audio/
   // and set this path (e.g. "/audio/story.mp3"). Empty = player hidden.
   audioSrc: "",
-  pullQuote: "I never left business. I changed how I run it.",
+  pullQuote: "He never left business. He changed how he runs it.",
   paragraphs: [
-    "There came a year my business was bleeding money.",
-    "I had done everything a businessman is supposed to do. Worked harder, cut costs, took advice from every mentor and consultant I could find. Nothing was working. The stress was eating my sleep, my health, my time with my family.",
-    "I came across Access Consciousness almost by accident. I saw it, I was curious, and I tried it, mostly to prove it would not work. I was a businessman, not a spiritual type.",
-    "When I finally sat with it, something I cannot fully explain in words shifted. Not the market. Not my numbers, not yet. Something in me. The decisions I made after were different. The conversations were different. The money started moving again.",
-    "I never left business. I still run one today. What changed is how I run it, and who I became while doing it.",
-    "Today I help other business owners and professionals find what I found. Not as a replacement for hard work, but as the missing piece underneath it.",
+    "There came a year his business was bleeding money.",
+    "He had done everything a businessman is supposed to do. Worked harder, cut costs, took advice from every mentor and consultant he could find. Nothing was working. The stress was eating his sleep, his health, his time with his family.",
+    "He came across Access Consciousness almost by accident. He saw it, he was curious, and he tried it, mostly to prove it would not work. He was a businessman, not a spiritual type.",
+    "When he finally sat with it, something he cannot fully explain in words shifted. Not the market. Not his numbers, not yet. Something in him. The decisions he made after were different. The conversations were different. The money started moving again.",
+    "He never left business. He still runs one today. What changed is how he runs it, and who he became while doing it.",
+    "Today he helps other business owners and professionals find what he found. Not as a replacement for hard work, but as the missing piece underneath it.",
   ],
 };
 
@@ -190,27 +191,28 @@ export const about = {
   // PLACEHOLDER: one-line positioning. Replace with Bhavesh's own words.
   heading: "A businessman who found another way.",
   lead:
-    "I am Bhavesh Sidhpura. I still run a business. I am also an Access Consciousness facilitator. The two are not a contradiction — one is the reason I am any good at the other.",
+    "Bhavesh Sidhpura still runs a business. He is also an Access Consciousness facilitator. The two are not a contradiction — one is the reason he is any good at the other.",
   // PLACEHOLDER bio paragraphs — to be replaced with the real bio Bhavesh provides.
   bio: [
-    "I did not arrive here through spirituality. I arrived through stress, numbers, and a year I would not wish on anyone. The tools I teach are the ones that pulled my own work, my health, and my relationships back from the edge.",
-    "I have spent my life in business in Pune. The discipline of that world is in everything I do — practical, grounded, allergic to fluff. I facilitate the way I would have wanted it offered to me: no performance, no jargon, no asking you to believe anything.",
+    "He did not arrive here through spirituality. He arrived through stress, numbers, and a year he would not wish on anyone. The tools he teaches are the ones that pulled his own work, his health, and his relationships back from the edge.",
+    "He has spent his life in business in Pune, and has been practising Access Consciousness since 2016. The discipline of that world is in everything he does — practical, grounded, allergic to fluff. He facilitates the way he would have wanted it offered to him: no performance, no jargon, no asking anyone to believe anything.",
   ],
   // Short, emotional pull that anchors the bio.
-  pullQuote: "I never left business. I changed how I run it, and who I became while doing it.",
+  pullQuote:
+    "He never left business. He changed how he runs it, and who he became while doing it.",
   // Facts the client confirms. PLACEHOLDER values; safe to edit freely.
   facts: [
     { k: "Based in", v: "Pune, India" },
-    { k: "Practising since", v: "Year to confirm" },
+    { k: "Practising since", v: "2016" },
     { k: "Works with", v: "Owners, founders, professionals" },
-    { k: "Languages", v: "English, Hindi, Gujarati" },
+    { k: "Languages", v: "English, Hindi, Gujarati, Marathi" },
   ],
   // Dedicated qualifications block so credibility is unmistakable.
   qualifications: {
     label: "Qualifications",
     heading: "Certified, and accountable to a global body.",
     intro:
-      "Every one of these is a formal Access Consciousness certification, not a weekend badge. They mean I am trained to run each process on you, and to teach you to run it yourself.",
+      "Every one of these is a formal Access Consciousness certification, not a weekend badge. They mean he is trained to run each process with you, and to teach you to run it yourself.",
     items: [
       {
         name: "Access Bars Facilitator",
@@ -231,7 +233,7 @@ export const about = {
     // PLACEHOLDER: replace with Bhavesh's actual directory URL when confirmed.
     directoryHref: "https://www.accessconsciousness.com/en/find-a-facilitator/",
   },
-  beliefHeading: "What I actually believe",
+  beliefHeading: "What he actually believes",
   beliefs: [
     {
       title: "The block is rarely the block.",
@@ -253,23 +255,23 @@ export const about = {
     items: [
       {
         marker: "The wall",
-        note: "I did everything a businessman is supposed to do — worked harder, cut costs, took every consultant's advice. The business was still bleeding, and it was eating my sleep, my health, my time with my family.",
+        note: "He did everything a businessman is supposed to do — worked harder, cut costs, took every consultant's advice. The business was still bleeding, and it was eating his sleep, his health, his time with his family.",
       },
       {
         marker: "The doubt",
-        note: "I came across Access almost by accident. I tried it mostly to prove it would not work. I was a businessman, not a spiritual type.",
+        note: "He came across Access almost by accident. He tried it mostly to prove it would not work. He was a businessman, not a spiritual type.",
       },
       {
         marker: "The turn",
-        note: "When I finally sat with it, something I still cannot fully put into words shifted. Not the market. Not the numbers, not yet. Something in me. The decisions I made after were different.",
+        note: "When he finally sat with it, something he still cannot fully put into words shifted. Not the market. Not the numbers, not yet. Something in him. The decisions he made after were different.",
       },
       {
         marker: "The practice",
-        note: "I trained, then certified, then began facilitating others — while still running my own business, because I never wanted to teach from theory.",
+        note: "From 2016 he trained, then certified, then began facilitating others — while still running his own business, because he never wanted to teach from theory.",
       },
       {
         marker: "Now",
-        note: "Sessions and certified classes across Pune and India, for the business owners and professionals I used to be.",
+        note: "Sessions and certified classes across Pune and India, for the business owners and professionals he used to be.",
       },
     ],
   },
@@ -428,19 +430,22 @@ export type Service = {
   featured?: boolean;
   what: string;
   length: string;
-  price: string;
   cta: string;
   ctaHref: string;
+};
+
+export const servicesHeading = {
+  heading: "Three ways to work with Bhavesh.",
+  body: "All in person, in Pune, or wherever he is travelling.",
 };
 
 export const services: Service[] = [
   {
     id: "bars",
-    name: "1:1 Access Bars Session",
+    name: "Access Bars",
     featured: true,
-    what: "A gentle, hands-on session. 32 points on the head, light touch, deep release.",
-    length: "1 to 1.5 hours",
-    price: "Starting from Rs 5,000",
+    what: "A gentle, hands-on session — 32 points on the head, light touch, deep release. Or learn to run Bars yourself in a full one-day certification class.",
+    length: "Session 1 to 1.5 hours · Class 1 day",
     cta: "Book a session",
     ctaHref: "/book",
   },
@@ -449,25 +454,14 @@ export const services: Service[] = [
     name: "Access Body Process",
     what: "Targeted body processes for specific patterns: money, sleep, pain, and more. Taught or facilitated individually.",
     length: "1.5 to 2 hours per process",
-    price: "Starting from Rs 5,000",
     cta: "Enquire",
     ctaHref: "/book",
   },
   {
-    id: "bars-class",
-    name: "Access Bars Class",
-    what: "Learn to run Bars yourself. A full one-day certification class. Walk out able to gift this to anyone.",
-    length: "1 day",
-    price: "Starting from Rs 28,000",
-    cta: "See class dates",
-    ctaHref: "/classes",
-  },
-  {
-    id: "facelift-class",
-    name: "Access Facelift Class",
-    what: "The Access Energetic Facelift, a one-day class for face and body rejuvenation, and to give to others.",
-    length: "1 day",
-    price: "Starting from Rs 36,000",
+    id: "facelift",
+    name: "Access Facelift",
+    what: "The Access Energetic Facelift — a hands-on process for face and body rejuvenation, offered as a session or as a one-day class to give to others.",
+    length: "Session or 1-day class",
     cta: "See class dates",
     ctaHref: "/classes",
   },
@@ -502,7 +496,7 @@ export const steps = {
     },
     {
       title: "You arrive",
-      body: "We talk for a few minutes. No spiritual performance required. Come as you are.",
+      body: "A few minutes of conversation first. No spiritual performance required. Come as you are.",
     },
     {
       title: "The session",
@@ -510,7 +504,7 @@ export const steps = {
     },
     {
       title: "After",
-      body: "We sit for a moment. Drink water. Notice what is different over the next few days. Most people feel it in their decisions first.",
+      body: "A moment to sit. Drink water. Notice what is different over the next few days. Most people feel it in their decisions first.",
     },
   ],
 };
@@ -534,23 +528,23 @@ export const faqs = {
   items: [
     {
       q: "What actually happens in a Bars session?",
-      a: "You lie back, fully clothed, while I lightly touch 32 points on your head. It is deeply relaxing. There is nothing you need to do, believe, or perform.",
+      a: "You lie back, fully clothed, while Bhavesh lightly touches 32 points on your head. It is deeply relaxing. There is nothing you need to do, believe, or perform.",
     },
     {
       q: "Do I have to be spiritual for this to work?",
-      a: "No. I was not. I am a businessman. You do not need to believe in anything. You just need to be willing to notice what changes.",
+      a: "No. Bhavesh was not either — he is a businessman. You do not need to believe in anything. You just need to be willing to notice what changes.",
     },
     {
       q: "Will this fix my money problem?",
-      a: "I make no promises about your bank balance. What I have seen, in myself and others, is that when the energy underneath your decisions shifts, the decisions change. The rest follows from there.",
+      a: "He makes no promises about your bank balance. What he has seen, in himself and others, is that when the energy underneath your decisions shifts, the decisions change. The rest follows from there.",
     },
     {
       q: "How many sessions do I need?",
-      a: "Many people feel something after one. For deeper patterns, a handful over a few weeks. We will talk about what makes sense for you, with no pressure to commit upfront.",
+      a: "Many people feel something after one. For deeper patterns, a handful over a few weeks. He will talk about what makes sense for you, with no pressure to commit upfront.",
     },
     {
       q: "Where are sessions held?",
-      a: "In Pune. The exact address is shared on booking. I also travel across India for classes and group work.",
+      a: "In Pune. The exact address is shared on booking. He also travels across India for classes and group work.",
     },
     {
       q: "Do you work online?",
@@ -558,7 +552,7 @@ export const faqs = {
     },
     {
       q: "What is the difference between a session and a class?",
-      a: "In a session, I run the work on you. In a class, I teach you to run it, on yourself and others.",
+      a: "In a session, he runs the work on you. In a class, he teaches you to run it, on yourself and others.",
     },
   ],
 };
@@ -566,12 +560,12 @@ export const faqs = {
 export const booking = {
   label: "Begin",
   heading: "Ready when you are.",
-  body: "Book a 1:1 session, or message me first if you have a question. No long forms, no pressure.",
-  whatsappPrompt: "Rather just talk? Message me on WhatsApp",
+  body: "Book a 1:1 session, or message first if you have a question. No long forms, no pressure.",
+  whatsappPrompt: "Rather just talk? Message on WhatsApp",
   // Lightweight enquiry form (fallback for people who do not want Calendly).
   form: {
     heading: "Or send a note",
-    body: "Tell me a little, and I will reply personally.",
+    body: "Share a little, and he will reply personally.",
     nameLabel: "Your name",
     namePlaceholder: "Name",
     emailLabel: "Email",
@@ -581,8 +575,9 @@ export const booking = {
     submit: "Send note",
     sending: "Sending…",
     successHeading: "Note received.",
-    successBody: "Thank you. I will get back to you personally, usually within a day or two.",
-    error: "Something went wrong. Please try again, or reach me on WhatsApp.",
+    successBody:
+      "Thank you. He will get back to you personally, usually within a day or two.",
+    error: "Something went wrong. Please try again, or reach out on WhatsApp.",
   },
 };
 
@@ -721,7 +716,7 @@ export const diagnostic = {
 export const observatory = {
   label: "The Observatory",
   heading: "There is a room most visitors never open.",
-  body: "Beyond this door are the guided exercises, the practitioner notes, and the questions we do not put on the public page. Not because they are secret, but because they mean more to the ones who choose to step in.",
+  body: "Beyond this door are the guided exercises, the practitioner notes, and the questions kept off the public page. Not because they are secret, but because they mean more to the ones who choose to step in.",
   lockedHint: "Inside, right now:",
   contents: [
     "The 7 questions that consistently change how people see their lives",
@@ -867,8 +862,8 @@ export const possibilityMap = {
     },
   ] as MapNode[],
   endNote:
-    "This is one path through one door. In a session, we walk yours, with the patterns that are actually running you.",
-  endCta: "Walk my path in a session",
+    "This is one path through one door. In a session, the path walked is yours — with the patterns that are actually running you.",
+  endCta: "Walk this path in a session",
 };
 
 /* ---------------------------------------------------------------------------

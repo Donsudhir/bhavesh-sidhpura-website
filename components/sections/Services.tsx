@@ -1,9 +1,8 @@
-import Image from "next/image";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import { Container } from "../ui/Container";
 import { Reveal } from "../ui/Reveal";
-import { services, images } from "@/lib/site";
+import { services, servicesHeading } from "@/lib/site";
 
 export function Services() {
   return (
@@ -12,80 +11,53 @@ export function Services() {
         <Reveal>
           <div className="max-w-2xl">
             <h2 className="font-display text-4xl font-light leading-[1.1] tracking-[-0.02em] text-text sm:text-5xl">
-              Four ways to work with me.
+              {servicesHeading.heading}
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-text-muted">
-              All in person, in Pune, or wherever I am travelling.
+              {servicesHeading.body}
             </p>
           </div>
         </Reveal>
 
-        <div className="mt-14 grid gap-5 md:grid-cols-2">
+        <div className="mt-16 grid gap-12 border-t border-border pt-12 md:grid-cols-3 md:gap-0 md:divide-x md:divide-border">
           {services.map((s, i) => (
-            <Reveal as="article" index={i % 2} key={s.id}>
+            <Reveal as="article" index={i} key={s.id}>
               <div
-                className={`spotlight group flex h-full flex-col overflow-hidden rounded-card border transition-colors ${
-                  s.featured
-                    ? "border-accent/40 bg-surface md:col-span-2 md:flex-row"
-                    : "border-border bg-bg-elevated hover:border-border-strong"
+                className={`group flex h-full flex-col ${
+                  i === 0 ? "md:pr-10" : i === services.length - 1 ? "md:pl-10" : "md:px-10"
                 }`}
               >
-                {s.featured && (
-                  <div className="relative aspect-4/5 w-full overflow-hidden md:aspect-3/4 md:w-2/5 md:shrink-0">
-                    <Image
-                      src={images.delivering}
-                      alt="Bhavesh at an Access Consciousness class"
-                      fill
-                      sizes="(max-width: 768px) 100vw, 40vw"
-                      className="object-cover object-top img-editorial"
-                    />
-                    <span className="absolute left-4 top-4 rounded-full bg-accent px-3 py-1 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-on-accent">
-                      Most booked
-                    </span>
-                  </div>
-                )}
+                <span className="font-display text-base font-light text-accent">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3 className="mt-5 font-display text-2xl font-normal leading-snug text-text sm:text-[1.65rem]">
+                  {s.name}
+                </h3>
+                <p className="mt-4 flex-1 text-[1.02rem] leading-relaxed text-text-muted">
+                  {s.what}
+                </p>
 
-                <div className="flex flex-1 flex-col p-7 sm:p-8 md:justify-center">
-                  <h3 className="font-display text-2xl font-normal leading-snug text-text">
-                    {s.name}
-                  </h3>
-                  <p className="mt-3 text-[1.02rem] leading-relaxed text-text-muted">
-                    {s.what}
-                  </p>
+                <p className="mt-6 text-[0.9rem] text-text-muted">
+                  <span className="uppercase tracking-[0.14em] text-text-muted/80">
+                    Length
+                  </span>
+                  <span className="mt-1 block text-text">{s.length}</span>
+                </p>
 
-                  <dl className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-[0.92rem]">
-                    <div>
-                      <dt className="text-text-muted">Length</dt>
-                      <dd className="mt-0.5 text-text">{s.length}</dd>
-                    </div>
-                    <div>
-                      <dt className="text-text-muted">Price</dt>
-                      <dd className="mt-0.5 text-text">{s.price}</dd>
-                    </div>
-                  </dl>
-
-                  <Link
-                    href={s.ctaHref}
-                    className="mt-7 inline-flex items-center gap-2 self-start border-b border-accent pb-1 text-[0.95rem] font-medium text-text transition-colors hover:text-accent"
-                  >
-                    {s.cta}
-                    <ArrowRight
-                      size={16}
-                      className="transition-transform group-hover:translate-x-0.5"
-                    />
-                  </Link>
-                </div>
+                <Link
+                  href={s.ctaHref}
+                  className="mt-8 inline-flex items-center gap-2 self-start border-b border-accent pb-1 text-[0.95rem] font-medium text-text transition-colors hover:text-accent"
+                >
+                  {s.cta}
+                  <ArrowRight
+                    size={16}
+                    className="transition-transform group-hover:translate-x-0.5"
+                  />
+                </Link>
               </div>
             </Reveal>
           ))}
         </div>
-
-        <Reveal>
-          <p className="mt-8 text-[0.9rem] italic text-text-muted">
-            All prices shown as &ldquo;starting from&rdquo;. Exact pricing
-            confirmed at booking.
-          </p>
-        </Reveal>
       </Container>
     </section>
   );

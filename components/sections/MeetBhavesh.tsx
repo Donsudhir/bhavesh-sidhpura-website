@@ -32,7 +32,7 @@ export function MeetBhavesh() {
                 </div>
               </div>
               {/* Facts chip */}
-              <dl className="mt-5 grid grid-cols-3 gap-3">
+              <dl className="mt-5 grid grid-cols-2 gap-3">
                 {meetBhavesh.facts.map((f) => (
                   <div
                     key={f.k}
@@ -57,7 +57,7 @@ export function MeetBhavesh() {
             <Reveal index={1}>
               <h2 className="mt-6 text-balance font-display text-4xl font-light leading-[1.08] tracking-[-0.02em] text-text sm:text-5xl">
                 {meetBhavesh.heading}{" "}
-                <span className="italic text-accent">
+                <span className="font-light text-text">
                   {meetBhavesh.emphasis}
                 </span>
               </h2>

@@ -11,7 +11,7 @@ export const classesPage = {
   intro: {
     label: "Classes",
     heading: "Learn to run the work yourself.",
-    body: "A class is different from a session. In a session I run the work on you. In a class, you walk out certified and able to give it to anyone, including yourself.",
+    body: "A class is different from a session. In a session he runs the work on you. In a class, you walk out certified and able to give it to anyone, including yourself.",
   },
   offerings: [
     {
