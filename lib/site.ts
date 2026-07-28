@@ -7,8 +7,7 @@
 export const site = {
   name: "Bhavesh Sidhpura",
   role: "Access Consciousness Facilitator",
-  // PLACEHOLDER: domain not yet decided
-  domain: "https://bhaveshsidhpura.com",
+  domain: "https://www.bhaveshsidhpura.com",
   title: "Bhavesh Sidhpura, Access Consciousness Facilitator",
   description:
     "A businessman who found another way. Access Bars, Facelift and Body Process sessions and classes in Pune, and across India on request.",
@@ -65,10 +64,13 @@ export const hero = {
 
 /* HERO TRUST TICKER — quiet marquee of the things that make him credible. */
 export const heroTrust = [
-  "Certified Access Bars Facilitator",
-  "Access Body Process Facilitator",
-  "Access Energetic Facelift",
-  "Listed on the global Access Consciousness directory",
+  "CFMW",
+  "Access Bars Facilitator & Practitioner",
+  "Access Facelift Facilitator & Practitioner",
+  "Access Body Processes Facilitator & Practitioner",
+  "Talk to the Entities Practitioner",
+  "Symphony Of Possibilities Practitioner",
+  "Abuse Hold Practitioner",
   "Sessions & certified classes in Pune",
   "A facilitator and a businessman",
 ];
@@ -91,20 +93,32 @@ export const meetBhavesh = {
     label: "Qualifications",
     items: [
       {
-        name: "Access Bars Facilitator",
+        name: "CFMW",
+        note: "Creating Fabulous Money Wealth.",
+      },
+      {
+        name: "Access Bars Facilitator & Practitioner",
         note: "Certified to run and to teach the Bars.",
       },
       {
-        name: "Access Body Process Facilitator",
+        name: "Access Facelift Facilitator & Practitioner",
+        note: "Certified practitioner and teacher of the Facelift.",
+      },
+      {
+        name: "Access Body Processes Facilitator & Practitioner",
         note: "Trained in the hands-on body processes.",
       },
       {
-        name: "Access Energetic Facelift",
-        note: "Certified practitioner and teacher.",
+        name: "Talk to the Entities Practitioner",
+        note: "Certified practitioner.",
       },
       {
-        name: "Global directory listed",
-        note: "On the official Access Consciousness facilitator directory.",
+        name: "Symphony Of Possibilities Practitioner",
+        note: "Certified practitioner.",
+      },
+      {
+        name: "Abuse Hold Practitioner",
+        note: "Certified practitioner.",
       },
     ],
   },
@@ -215,16 +229,32 @@ export const about = {
       "Every one of these is a formal Access Consciousness certification, not a weekend badge. They mean he is trained to run each process with you, and to teach you to run it yourself.",
     items: [
       {
-        name: "Access Bars Facilitator",
-        note: "Certified to run the Bars and to teach the certified one-day class.",
+        name: "CFMW",
+        note: "Creating Fabulous Money Wealth.",
       },
       {
-        name: "Access Body Process Facilitator",
+        name: "Access Bars Facilitator & Practitioner",
+        note: "Certified to run the Bars and to teach the certified class.",
+      },
+      {
+        name: "Access Facelift Facilitator & Practitioner",
+        note: "Certified practitioner and teacher of the Facelift.",
+      },
+      {
+        name: "Access Body Processes Facilitator & Practitioner",
         note: "Trained in the hands-on body processes for specific patterns.",
       },
       {
-        name: "Access Energetic Facelift",
-        note: "Certified practitioner and teacher of the Facelift.",
+        name: "Talk to the Entities Practitioner",
+        note: "Certified practitioner.",
+      },
+      {
+        name: "Symphony Of Possibilities Practitioner",
+        note: "Certified practitioner.",
+      },
+      {
+        name: "Abuse Hold Practitioner",
+        note: "Certified practitioner.",
       },
     ],
     directory:
@@ -319,9 +349,7 @@ export const transformations = {
   label: "The explorers",
   heading: "What a shift actually looks like.",
   intro:
-    "Real change is rarely a thunderclap. It is a slow turning of the wheel. These journeys are illustrative composites, shared to show the shape of the work, not as named testimonials.",
-  disclaimer:
-    "Illustrative. Real, consent-signed stories replace these before any are presented as identified clients.",
+    "Real change is rarely a thunderclap. It is a slow turning of the wheel. These journeys are shared to show the shape of the work.",
   explorers: [
     {
       id: "147",
@@ -435,7 +463,7 @@ export type Service = {
 };
 
 export const servicesHeading = {
-  heading: "Three ways to work with Bhavesh.",
+  heading: "Sessions with Bhavesh.",
   body: "All in person, in Pune, or wherever he is travelling.",
 };
 
@@ -443,27 +471,42 @@ export const services: Service[] = [
   {
     id: "bars",
     name: "Access Bars",
-    featured: true,
-    what: "A gentle, hands-on session — 32 points on the head, light touch, deep release. Or learn to run Bars yourself in a full one-day certification class.",
-    length: "Session 1 to 1.5 hours · Class 1 day",
+    what: "A gentle, hands-on session. 32 points on the head, light touch, deep release.",
+    length: "1 to 1.5 hours",
     cta: "Book a session",
-    ctaHref: "/book",
-  },
-  {
-    id: "body",
-    name: "Access Body Process",
-    what: "Targeted body processes for specific patterns: money, sleep, pain, and more. Taught or facilitated individually.",
-    length: "1.5 to 2 hours per process",
-    cta: "Enquire",
     ctaHref: "/book",
   },
   {
     id: "facelift",
     name: "Access Facelift",
-    what: "The Access Energetic Facelift — a hands-on process for face and body rejuvenation, offered as a session or as a one-day class to give to others.",
-    length: "Session or 1-day class",
-    cta: "See class dates",
-    ctaHref: "/classes",
+    what: "The Access Energetic Facelift — a hands-on process for face and body rejuvenation.",
+    length: "1 to 1.5 hours",
+    cta: "Book a session",
+    ctaHref: "/book",
+  },
+  {
+    id: "body",
+    name: "Access Body Processes",
+    what: "Targeted body processes for specific patterns: money, sleep, pain, and more.",
+    length: "1.5 to 2 hours per process",
+    cta: "Enquire",
+    ctaHref: "/book",
+  },
+  {
+    id: "symphony",
+    name: "Symphony Session",
+    what: "A Symphony of Possibilities session — opening space for what becomes available when limitation softens.",
+    length: "By arrangement",
+    cta: "Enquire",
+    ctaHref: "/book",
+  },
+  {
+    id: "abuse-hold",
+    name: "Abuse Hold Session",
+    what: "A focused session working with abuse holds — clearing what the body and energy have been carrying.",
+    length: "By arrangement",
+    cta: "Enquire",
+    ctaHref: "/book",
   },
 ];
 
@@ -515,9 +558,13 @@ export const steps = {
 export const credentials = {
   heading: "Certified by Access Consciousness",
   certs: [
-    "Bars Facilitator (BF)",
-    "Body Process Facilitator (BPF)",
-    "Access Energetic Facelift",
+    "CFMW",
+    "Access Bars Facilitator & Practitioner",
+    "Access Facelift Facilitator & Practitioner",
+    "Access Body Processes Facilitator & Practitioner",
+    "Talk to the Entities Practitioner",
+    "Symphony Of Possibilities Practitioner",
+    "Abuse Hold Practitioner",
   ],
   directory:
     "Listed on the official Access Consciousness global facilitator directory.",

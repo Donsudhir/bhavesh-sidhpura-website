@@ -3,7 +3,7 @@
 export type ClassDate = {
   city: string;
   dateLabel: string;
-  klass: "Bars" | "Facelift";
+  klass: "Bars" | "Facelift" | "Body Processes";
   status: "Open" | "Few seats" | "Waitlist";
 };
 
@@ -16,7 +16,7 @@ export const classesPage = {
   offerings: [
     {
       id: "bars",
-      name: "Access Bars Class",
+      name: "Access Bars",
       duration: "One full day",
       price: "Starting from Rs 28,000",
       includes: [
@@ -30,7 +30,7 @@ export const classesPage = {
     },
     {
       id: "facelift",
-      name: "Access Energetic Facelift Class",
+      name: "Access Facelift",
       duration: "One full day",
       price: "Starting from Rs 36,000",
       includes: [
@@ -42,11 +42,26 @@ export const classesPage = {
       summary:
         "A gentle, hands-on process for the face and body. You learn to give the Facelift and to receive it, and you leave able to repeat it on your own.",
     },
+    {
+      id: "body",
+      name: "Access Body Processes",
+      duration: "By class format",
+      price: "On enquiry",
+      includes: [
+        "Hands-on training in Access Body Processes",
+        "Practice rounds, given and received",
+        "Tools for specific patterns in the body",
+        "Ability to facilitate the processes for others",
+      ],
+      summary:
+        "Learn the Access Body Processes for targeted patterns — money, sleep, pain, and more — so you can run them for yourself and others.",
+    },
   ],
   // PLACEHOLDER schedule. Replace with confirmed dates.
   schedule: [
     { city: "Pune", dateLabel: "Dates announced soon", klass: "Bars", status: "Waitlist" },
     { city: "Pune", dateLabel: "Dates announced soon", klass: "Facelift", status: "Waitlist" },
+    { city: "Pune", dateLabel: "Dates announced soon", klass: "Body Processes", status: "Waitlist" },
     { city: "Mumbai", dateLabel: "On request", klass: "Bars", status: "Open" },
   ] as ClassDate[],
 };

@@ -19,14 +19,10 @@ export function Services() {
           </div>
         </Reveal>
 
-        <div className="mt-16 grid gap-12 border-t border-border pt-12 md:grid-cols-3 md:gap-0 md:divide-x md:divide-border">
+        <div className="mt-16 grid gap-x-10 gap-y-14 border-t border-border pt-12 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
-            <Reveal as="article" index={i} key={s.id}>
-              <div
-                className={`group flex h-full flex-col ${
-                  i === 0 ? "md:pr-10" : i === services.length - 1 ? "md:pl-10" : "md:px-10"
-                }`}
-              >
+            <Reveal as="article" index={i % 3} key={s.id}>
+              <div className="group flex h-full flex-col">
                 <span className="font-display text-base font-light text-accent">
                   {String(i + 1).padStart(2, "0")}
                 </span>

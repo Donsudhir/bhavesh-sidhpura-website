@@ -10,7 +10,7 @@ import { site, ctas, images } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Classes",
   description:
-    "Access Bars and Access Energetic Facelift certification classes in Pune, and across India on request.",
+    "Access Bars, Facelift and Body Processes classes in Pune, and across India on request.",
 };
 
 const statusStyles: Record<string, string> = {
@@ -58,7 +58,7 @@ export default function ClassesPage() {
         {/* Offerings */}
         <section className="py-24 lg:py-28">
           <Container>
-            <div className="grid gap-5 lg:grid-cols-2">
+            <div className="grid gap-5 lg:grid-cols-3">
               {offerings.map((o, i) => (
                 <Reveal as="article" index={i} key={o.id}>
                   <div className="flex h-full flex-col rounded-card border border-border bg-bg-elevated p-8 lg:p-10">
@@ -133,7 +133,9 @@ export default function ClassesPage() {
                         {row.city}
                       </span>
                       <span className="text-[0.95rem] text-text-muted">
-                        Access {row.klass} Class
+                        {row.klass === "Body Processes"
+                          ? "Access Body Processes Class"
+                          : `Access ${row.klass} Class`}
                       </span>
                     </div>
                     <div className="flex items-center gap-5">

@@ -63,12 +63,6 @@ export function Transformations() {
             </Reveal>
           ))}
         </div>
-
-        <Reveal index={1}>
-          <p className="mt-10 text-[0.85rem] italic leading-relaxed text-text-muted">
-            {transformations.disclaimer}
-          </p>
-        </Reveal>
       </Container>
     </section>
   );
